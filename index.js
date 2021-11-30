@@ -28,11 +28,21 @@ let userInput = prompt("Are you happy with your day trip options?");
     console.log((random + (", ") + randomFood + (", ") + rantrans + (", and ") + funThings));
     }
     else {
-        let newInput = prompt("Do you want to change the destination or entertainment?");
+        let newInput = prompt("Do you want to change the destination, restaurant, transportation, or entertainment?");
         if(newInput == "destination"){
             random = (places[Math.floor(Math.random() * places.length)])
+            console.log(random);
         } 
+        else if(newInput == "restaurant"){
+            randomFood = (restaurant[Math.floor(Math.random() * restaurant.length)])
+            console.log(randomFood);
+        }
+        else if(newInput == "transportation"){
+            rantrans = (transportation[Math.floor(Math.random() * transportation.length)])
+            console.log(rantrans);
+        }
         else if(newInput == "entertainment"){
             funThings = (entertainment[Math.floor(Math.random() * entertainment.length)])
-        }
+            console.log(funThings)}
     }
+// As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
