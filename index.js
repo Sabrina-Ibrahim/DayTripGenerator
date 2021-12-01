@@ -26,6 +26,7 @@ console.log(random + (", ") + randomFood + (", ") + rantrans + (", and ") + funT
 let userInput = prompt("Are you happy with your day trip options?");
     if(userInput == "yes"){
     console.log((random + (", ") + randomFood + (", ") + rantrans + (", and ") + funThings));
+    console.log("Your trip is complete!");
     }
     else {
         let newInput = prompt("Do you want to change the destination, restaurant, transportation, or entertainment?");
@@ -43,6 +44,28 @@ let userInput = prompt("Are you happy with your day trip options?");
         }
         else if(newInput == "entertainment"){
             funThings = (entertainment[Math.floor(Math.random() * entertainment.length)])
-            console.log(funThings)}
+            console.log(funThings)
+        }
+        console.log((random + (", ") + randomFood + (", ") + rantrans + (", and ") + funThings));
     }
-// As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
+//As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
+//Figure out what is wrong with the else if statements*
+    let newInput;
+    while(userInput == "no"){
+        if(newInput == "destination"){
+            console.log("Your trip is complete!")
+            newInput++
+        }
+        else if(newInput == "restaurant");
+            console.log("Your trip is complete!");
+            newInput++ 
+        }
+        else if(newInput == "transportation");
+            console.log("Your trip is complete!");
+            newInput++
+        }
+        else{newInput == "entertainment";
+            console.log("Your trip is complete!");
+            newInput++;
+            }
+        }
